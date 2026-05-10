@@ -1,0 +1,76 @@
+/* Configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8; /* Color de fondo suave */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+/* Encabezado */
+.main-header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1a2a3a;
+}
+
+.main-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.main-header a {
+    color: #2b82c9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Contenedor de tarjetas */
+.container {
+    display: flex;
+    gap: 20px; /* Espacio entre cajas */
+    justify-content: center;
+    flex-wrap: wrap; /* Para que sea responsivo */
+}
+
+/* Estilo base de las tarjetas */
+.card {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto al pasar el mouse */
+}
+
+/* Colores específicos */
+.card-blue {
+    background-color: #3f9ce0;
+}
+
+.card-red {
+    background-color: #e85342;
+}
+
+.card-green {
+    background-color: #2ecc71;
+}
